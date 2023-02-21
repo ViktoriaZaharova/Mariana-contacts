@@ -1,0 +1,394 @@
+@import "fonts"
+@import "vars"
+
+// main home	
+.home
+	background: url('../img/bg1.png') no-repeat center
+	background-size: cover
+	color: #fff
+	padding: 287px 0 113px
+	.box-text
+		max-width: 740px
+		width: 100%
+		margin: 0 0 0 auto
+		text-shadow: -0.9px 0.5px 106.8px #09021b
+	.container
+		flex-direction: column
+		align-items: flex-start
+		max-width: 1280px
+	.date
+		position: relative
+		margin: 90px 0 100px
+		text-transform: uppercase
+		background: $accent
+		color: #fff
+		border-radius: 29px
+		letter-spacing: 0.15px
+		padding: 7px 30px
+		font-weight: normal
+		line-height: normal
+		position: relative
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			right: 100%
+			transform: translate(0,-50%)
+			width: 2000px
+			height: 2px
+			background: $accent
+		span
+			font-family: $font
+
+.description-title
+	width: 100%
+	letter-spacing: 0.46px
+	font-size: 46px
+	font-weight: 800
+	text-transform: uppercase
+// main home end	
+
+// description-journey
+.description-journey
+	position: relative
+	padding: 117px 0 86px
+	background: url('../img/bg2.jpg') no-repeat center
+	background-size: cover
+	z-index: 1
+	h2
+		margin: 39px 0 82px
+	.box-text
+		margin: 0 0 75px
+		max-width: 850px
+	&__img
+		position: absolute
+		top: 365px
+		right: -120px
+		@include d-flex
+		z-index: -1
+
+.description-text
+	position: relative
+	padding: 40px 0 0
+	line-height: 1.33
+	letter-spacing: -0.33px
+	max-width: 882px
+	font-weight: bold
+	text-transform: uppercase
+	&::before, &:after
+		content: ''
+		position: absolute
+		background: $accent
+		top: 0
+	&::before
+		left: -35px
+		width: 80px
+		height: 3px
+	&::after
+		width: 3px
+		height: 80px
+		left: -35px
+
+// description-journey end
+
+// causes	
+.causes
+	padding: 105px 0 90px
+	background: url('../img/bg3.png')	no-repeat center
+	background-size: cover
+	h2
+		margin: 0 0 90px
+		max-width: 875px
+
+.causes-box
+	margin: 0 0 30px
+	text-align: center
+	max-width: 280px
+	width: 100%
+	font-size: 26.7px
+	letter-spacing: -0.27px
+	line-height: normal
+	&__icon
+		@include d-flex
+		margin: 0 auto 50px
+
+// causes end
+
+// result-courses	
+.result-courses
+	padding: 127px 0 140px
+	background: url('../img/bg4.jpg') no-repeat center
+	background-size: cover
+	color: #fff
+	position: relative
+	z-index: 2
+	h2
+		color: #fff
+		margin: 0 0 58px
+
+.result-courses-list
+	padding: 30px 0 30px 89px
+	position: relative
+	z-index: 1
+	letter-spacing: -0.3px
+	&::before
+		content: ''
+		position: absolute
+		left: 15px
+		top: 0
+		width: 2px
+		height: 100%
+		background-image: radial-gradient(circle at 0 0, #1b69eb, #1b69eb)
+	li
+		position: relative
+		z-index: 1
+		margin: 0 0 45px
+		&:last-child
+			margin: 0
+		&::before
+			content: ''
+			position: absolute
+			left: -89px
+			top: 3px
+			background: url('../img/circe.png') no-repeat center
+			background-size: 100%
+			width: 31px
+			height: 31px
+// result-courses end	
+
+// about-author	
+.about-author
+	position: relative
+	z-index: 1
+	background: url('../img/bg5.jpg') no-repeat center
+	background-size: cover
+	overflow: hidden
+	padding: 200px 0 620px
+	margin: -108px 0 -320px
+	h2
+		margin: 44px 0 82px
+	&__img
+		position: absolute
+		z-index: -1
+		right: 0
+		top: -105px
+	.box-text
+		max-width: 640px
+		letter-spacing: -0.3px
+		position: relative
+		z-index: 1
+		strong
+			font-weight: normal
+
+// about-author end	
+
+// work-steps	
+.work-steps
+	background: url('../img/bg6.jpg') no-repeat center top
+	background-size: cover
+	padding: 123px 0 180px
+	color: #fff
+	position: relative
+	z-index: 2
+	h2
+		color: #fff
+		margin: 0 0 83px
+	h3
+		font-size: 60px
+		text-transform: uppercase
+		font-weight: 800
+		margin: 0 0 78px
+		letter-spacing: -0.6px
+
+.work-steps-list
+	max-width: 830px
+	margin: 0 0 109px
+	li
+		position: relative
+		padding: 0 0 0 103px
+		margin: 0 0 50px
+		&:last-child
+			margin: 0
+	strong
+		font-weight: normal		
+	.number
+		position: absolute
+		left: 0
+		top: -10px
+		font-size: 60px
+		font-weight: 300
+		strong
+			color: $accent
+			font-weight: bold
+
+
+.work-steps-box
+	text-align: center
+	letter-spacing: -0.27px
+	font-size: 26.7px
+	margin: 0 0 26px
+	&__icon
+		@include d-flex
+		margin: 0 auto 35px
+
+// work-steps end
+
+// gallery	
+.gallery
+	padding: 116px 0
+	background: url('../img/bg7.jpg') no-repeat center top
+	background-size: cover
+	.section-wrapper
+		margin: 0 -9px
+		width: fit-content
+	h2
+		width: fit-content
+		span
+			display: block
+			margin: 0 0 10px
+			letter-spacing: -0.33px
+			font-size: 33px
+			font-weight: bold
+
+.address
+	color: #272727
+	margin: 0 0 0 90px
+	letter-spacing: -0.3px
+	p
+		font-weight: bold
+		color: $accent
+	span
+		display: block
+
+.gallery-head
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 0 0 78px
+
+.gallery-item
+	padding: 0 9px 18px
+	width: 33.33%
+	&__container
+		height: 245px
+		@include d-flex
+		width: 100%
+		overflow: hidden
+		border-radius: 10px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: 17px
+			right: 23px
+			width: 41px
+			height: 41px
+			background: url('../img/zoom.png') no-repeat center
+			background-size: contain
+		img
+			transition: 2s
+			width: 100%
+			height: 100%
+			object-fit: cover
+			&:hover
+				transform: scale(1.2)
+// gallery end
+
+// contacts 	
+.contacts
+	padding: 136px 0 200px
+	background: url('../img/bg8.jpg') no-repeat center top
+	background-size: cover
+	color: #fff
+	h2
+		color: #fff
+
+.contacts-wrapper
+	margin: 0 0 138px
+
+.contacts-content
+	margin: 0 auto 0 0
+	h4
+		margin: 0 0 40px
+		color: $accent
+		font-weight: 800
+		letter-spacing: -0.47px
+		font-size: 46.7px
+	ul
+		letter-spacing: -0.3px
+		li
+			margin: 0 0 10px
+			&:last-child
+				margin: 0
+		img, .text-tablet
+			display: none		
+
+.callback-form
+	max-width: 630px
+	width: 100%
+
+.price
+	margin: 38px 0 75px
+	letter-spacing: -0.33px
+	font-size: 33px
+	font-weight: bold
+	p
+		margin: 20px 0 0
+		span
+			text-transform: uppercase
+
+.price-title
+	color: $accent
+	text-transform: uppercase
+	font-weight: 800
+	font-size: 46.7px
+	span
+		color: #fff
+		display: block
+		text-transform: none
+		font-size: 33px
+		font-weight: bold
+// contacts	end
+
+// callback
+.callback
+	text-align: center
+	.container
+		flex-direction: column
+		align-items: center
+	.btn
+		margin: 116px auto
+	h3
+		text-align: center
+		text-transform: uppercase
+		font-size: 48px
+		font-weight: 800
+		margin: 0 auto
+
+.link-document
+	text-align: center
+	margin: 200px auto 0
+	letter-spacing: -0.3px
+	color: #fff
+	&:hover
+		color: $accent
+
+.list-social-footer
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 37px 0 0
+		&:last-child
+			margin: 0
+		a
+			width: 85px
+			height: 85px
+			border-radius: 50%
+			background: #898989
+			@include d-flex
+			&:hover
+				background: $accent
+// callback end	

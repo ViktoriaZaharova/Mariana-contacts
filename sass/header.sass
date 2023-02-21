@@ -1,0 +1,63 @@
+@import "fonts"
+@import "vars"
+
+header
+	position: absolute
+	z-index: 3
+	width: 100%
+	left: 0
+	top: 0
+	padding: 20px 0
+	.container
+		align-items: center
+	.list-social
+		margin: 0 0 0 22px	
+
+.logo
+	display: flex
+	align-items: center
+	margin: 0 auto 0 0
+	span
+		display: block
+
+.logo-icon
+	margin: 0 15px 0 0
+
+.whatsapp-link
+	display: flex
+	align-items: center
+	color: #fff
+	border-radius: 17.6px
+	border: solid 1.8px #fff
+	font-size: 13.5px
+	font-weight: bold
+	text-transform: uppercase
+	padding: 6px 7px
+	&__icon
+		@include d-flex
+		margin: 0 9px 0 0
+	&:hover
+		background: $accent
+		color: #fff
+		border-color: $accent
+
+.list-social
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	
+	li
+		margin: 0 6px 0 0
+		&:last-child
+			margin: 0
+		a
+			@include d-flex
+			width: 26px
+			height: 26px
+			border-radius: 50%
+			background: #fff
+			&:hover
+				background: $accent
+				img
+					filter: brightness(0) invert(1)
+
