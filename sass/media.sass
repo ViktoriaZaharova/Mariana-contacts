@@ -93,7 +93,7 @@
 	.callback-form
 		margin: 100px auto 0
 
-@media only screen and (max-width: 992px)
+// @media only screen and (max-width: 992px)
 
 @media only screen and (max-width: 900px)
 	.home
@@ -159,6 +159,9 @@
 	h2
 		letter-spacing: -0.47px
 		font-size: 47px
+
+	.subtitle
+		font-size: 30px
 
 	.description-journey
 		padding: 112px 0 94px
@@ -308,24 +311,24 @@
 				margin: 0 18px 0 0
 			li
 				display: flex
-				align-items: flex-start	
+				align-items: flex-start
 				margin: 0 0 30px
 				&:last-child
 					margin: 0
 			.text-tablet
 				display: block
 			.text-pc
-				display: none			
+				display: none
 		h4
 			font-size: 36px
-			letter-spacing: -0.36px	
+			letter-spacing: -0.36px
 
 	.price
-		margin: 30px 0 50px		
-	
+		margin: 30px 0 50px
+
 	.price-title
 		font-size: 36px
-		span 
+		span
 			color: $accent
 			font-size: inherit
 			display: inline
@@ -336,14 +339,279 @@
 	.contacts-wrapper
 		margin: 0 0 126px
 
-	.callback 
+	.callback
 		.btn
-			margin: 115px auto	
+			margin: 115px auto
+
+@media only screen and (max-width: 680px)
+	h1
+		font-size: 90px
+
+	.description-title
+		font-size: 20px
+
+	.logo-text
+		max-width: 120px
+
+	.logo-icon
+		max-width: 45px
+
+	.home
+		.date
+			margin: 43px 0 81px
+			font-size: 19px
+			padding: 4px 18px
 
 @media only screen and (max-width: 576px)
+	.home
+		padding: 193px 0 74px
+		.box-text
+			max-width: 388px
+
+	.logo-text
+		max-width: 100px
+
+	.logo-icon
+		max-width: 30px
+
+	h1
+		font-size: 70.5px
+		margin: 0
+
+	.description-title
+		font-size: 16px
+
+	body
+		font-size: 19px
+
+	.whatsapp-link
+		font-size: 7px
+		padding: 2px
+		line-height: 1
+		&__icon
+			width: 13px
+			margin: 0 4px 0 0
+
+	.list-social
+		li
+			margin: 0 4px 0 0
+			a
+				width: 18px
+				height: 18px
+				min-width: 18px
+				padding: 3px
+
+	h2, .title-mobile
+		letter-spacing: -0.3px
+		font-size: 29.5px
+
+	.description-journey
+		padding: 68px 0 59px
+		h2, .title-mobile
+			margin: 30px auto 42px
+			max-width: 355px
+		h2
+			display: none
+		.subtitle
+			max-width: 355px
+			margin: 0 auto
+		.box-text
+			max-width: 408px
+			br
+				display: none
+
+	.description-text
+		font-size: 16.5px
+		padding: 25px
+		margin: 30px auto 0
+		max-width: 427px
+		br
+			&:first-child
+				display: block
+		.decor
+			width: 32px
+			height: 32px
+			&::before
+				height: 100%
+			&::after
+				width: 100%
+
+		&:after
+			height: 32px
+		&::before
+			width: 32px
+
+	.title-mobile
+		display: block
+
+	.subtitle
+		letter-spacing: -0.19px
+		font-size: 19px
+
+	.causes
+		padding: 63px 0 30px
+		h2
+			margin: 0 auto 38px
+			max-width: 430px
+
+	.causes-box
+		font-size: 19px
+		margin: 0 auto 45px
+		&:nth-child(2)
+			.causes-box__text
+				max-width: 200px
+		&:nth-child(3)
+			.causes-box__text
+				max-width: 380px
+		&__icon
+			margin: 0 auto 27px
+			height: 64px
+			img
+				max-height: 100%
+
+	.result-courses
+		padding: 70px 0 65px
+		h2
+			margin: 0 auto 43px
+
+	.result-courses-list
+		max-width: 410px
+		letter-spacing: normal
+		li
+			margin: 0 auto 20px
+			&:nth-child(3)
+				max-width: 365px
+			&:last-child
+				max-width: 400px
+				margin: 0 auto
+			&::before
+				width: 30px
+				height: 30px
+				margin: 0 auto 10px
+
+	.about-author
+		padding: 59px 0 0
+		h2
+			margin: 0 auto 42px
+		.box-text
+			max-width: 408px
+		&__img
+			max-width: 431px
+			margin: 30px auto 0
+
+	.work-steps
+		padding: 73px 0
+		h2
+			margin: 0 auto 52px
+		h3
+			margin: 0 auto 45px
+			max-width: 365px
+			font-size: 29.5px
+
+	.work-steps-list
+		margin: 0 auto 62px
+		max-width: 420px
+		br
+			display: none
+		li
+			margin: 0 auto 30px
+			&:nth-child(2)
+				max-width: 325px
+			&:last-child
+				margin: 0 auto
+				// max-width: 350px
+
+	.work-steps-box
+		font-size: 12.5px
+		margin: 0 0 40px
+		&__icon
+			height: 43px
+			margin: 0 auto 16px
+
+	.gallery
+		padding: 88px 0 43px
+		h2
+			margin: 0 auto
+			span
+				font-size: inherit
+
+	.address
+		letter-spacing: -0.19px
+		margin: 43px 0 0
+
+	.gallery-head
+		margin: 0 0 38px
+
+	.gallery-item__container::after
+		width: 30px
+		height: 30px
+
+	.link-document
+		padding: 15px 0 25px
+		font-size: 15px
+
+	.contacts
+		padding: 73px 0 144px
+		h2
+			margin: 0 auto 30px
+
+	.price
+		margin: 20px 0 30px
+		font-size: 22.5px
+		letter-spacing: -0.23px
+		p
+			margin: 10px 0 0
+
+	.price-title
+		font-size: 29.5px
+		letter-spacing: -0.3px
+
+	.contacts-content 
+		h4
+			margin: 0 0 26px
+			letter-spacing: -0.23px
+			font-size: 22.5px
+		ul
+			letter-spacing: 0
+			max-width: 180px
+			img
+				width: 27px
+				margin: 0 10px 0 0
+			li
+				margin: 0 0 20px
+
+	.contacts-wrapper
+		margin: 0 0 78px
+
+	.callback 
+		h3
+			font-size: 30px
+			max-width: 345px
+		.btn
+			margin: 70px auto
+
+	.btn
+		font-size: 11.5px
+		height: 47px
+		padding: 10px 55px
+		
+	.list-social-footer
+		li
+			margin: 0 23px 0 0
+			&:last-child
+				margin: 0
+			a
+				width: 53px
+				height: 53px	
+				padding: 13px			
 
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
+	.description-title
+		font-size: 12px
+
+	h1
+		font-size: 55px
 
 @media only screen and (max-width: 370px)

@@ -260,7 +260,7 @@ h1 {
   margin: 0 0 -30px;
 }
 
-h2 {
+h2, .title-mobile {
   width: 100%;
   color: #1d1d1d;
   font-size: 60px;
@@ -269,11 +269,16 @@ h2 {
   letter-spacing: -0.6px;
 }
 
+.title-mobile {
+  display: none;
+}
+
 .subtitle {
   line-height: 1.33;
   letter-spacing: -0.33px;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 33px;
 }
 
 .section-wrapper {
