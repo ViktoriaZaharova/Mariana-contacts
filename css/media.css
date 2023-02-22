@@ -234,6 +234,7 @@
     background: url("../img/bg3-768.jpg") no-repeat center top;
     background-size: cover;
     padding: 100px 0 50px;
+    margin: 0;
   }
   .causes h2 {
     text-align: center;
@@ -724,6 +725,9 @@
   }
 }
 @media only screen and (max-width: 420px) {
+  .container {
+    padding: 0 20px;
+  }
   body {
     font-size: 12.5px;
     line-height: 1.25;
@@ -776,9 +780,13 @@
   }
   .description-journey .box-text {
     max-width: 288px;
+    display: none;
   }
   .description-journey .box-text br {
-    display: none;
+    display: block;
+  }
+  .description-journey .box-text-mobile {
+    display: block;
   }
   .description-text {
     padding: 18px;
@@ -856,7 +864,6 @@
     max-width: 275px;
   }
   .about-author__img {
-    max-width: 288px;
     margin: 20px auto 0;
   }
   .work-steps {
@@ -877,6 +884,12 @@
   }
   .work-steps-list li {
     margin: 0 auto 20px;
+  }
+  .work-steps-list li span {
+    font-weight: normal;
+  }
+  .work-steps-list li strong.font-300 {
+    font-weight: 300;
   }
   .work-steps-box {
     margin: 0 0 26px;
@@ -959,5 +972,10 @@
   .link-document {
     padding: 10px 0 17px;
     font-size: 10px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .about-author__img {
+    max-width: 288px;
   }
 }

@@ -68,6 +68,9 @@
 		@include d-flex
 		z-index: -1
 
+.box-text-mobile
+	display: none
+
 .description-text
 	position: relative
 	padding: 40px 0 0
@@ -94,11 +97,12 @@
 
 // causes	
 .causes
-	padding: 105px 0 90px
-	background: url('../img/bg3.png')	no-repeat center
+	padding: 70px 0 90px
+	background: url('../img/bg3.jpg')	no-repeat center top
 	background-size: cover
+	margin: 0 0 -30px
 	h2
-		margin: 0 0 90px
+		margin: 0 0 60px
 		max-width: 875px
 
 .causes-box
@@ -106,7 +110,7 @@
 	text-align: center
 	max-width: 280px
 	width: 100%
-	font-size: 26.7px
+	font-size: 25px
 	letter-spacing: -0.27px
 	line-height: normal
 	color: #1d1d1d
@@ -168,7 +172,7 @@
 	padding: 200px 0 620px
 	margin: -108px 0 -320px
 	h2
-		margin: 44px 0 82px
+		margin: 24px 0 82px
 	&__img
 		position: absolute
 		z-index: -1
@@ -212,7 +216,7 @@
 		&:last-child
 			margin: 0
 	strong
-		font-weight: normal		
+		font-weight: normal
 	.number
 		position: absolute
 		left: 0
@@ -222,7 +226,6 @@
 		strong
 			color: $accent
 			font-weight: bold
-
 
 .work-steps-box
 	text-align: center
@@ -324,7 +327,7 @@
 			&:last-child
 				margin: 0
 		img, .text-tablet
-			display: none		
+			display: none
 
 .callback-form
 	max-width: 630px

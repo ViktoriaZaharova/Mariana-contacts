@@ -173,6 +173,8 @@
 			margin: 0 auto
 			text-shadow: -0.3px 1px 106.8px #09021b
 
+	
+
 	.description-text
 		margin: 48px auto 0
 		font-size: 26px
@@ -184,6 +186,7 @@
 		background: url('../img/bg3-768.jpg') no-repeat center top
 		background-size: cover
 		padding: 100px 0 50px
+		margin: 0
 		h2
 			text-align: center
 			margin: 0 auto 60px
@@ -605,9 +608,13 @@
 				height: 53px
 				padding: 13px
 
-// @media only screen and (max-width: 480px)
+
 
 @media only screen and (max-width: 420px)
+	.container
+		padding: 0 20px
+
+
 	body
 		font-size: 12.5px
 		line-height: 1.25
@@ -655,8 +662,11 @@
 			max-width: 236px
 		.box-text
 			max-width: 288px
+			display: none
 			br
-				display: none
+				display: block
+		.box-text-mobile		
+			display: block		
 
 	.description-text
 		padding: 18px
@@ -670,6 +680,8 @@
 		.decor
 			width: 22px
 			height: 22px
+
+	
 
 	h2, .title-mobile
 		font-size: 19.5px
@@ -722,7 +734,6 @@
 		.box-text
 			max-width: 275px
 		&__img
-			max-width: 288px
 			margin: 20px auto 0
 
 	.work-steps
@@ -740,6 +751,10 @@
 		margin: 0 auto 42px
 		li
 			margin: 0 auto 20px
+			span
+				font-weight: normal
+			strong.font-300
+				font-weight: 300	
 
 	.work-steps-box
 		margin: 0 0 26px
@@ -819,4 +834,8 @@
 	.link-document
 		padding: 10px 0 17px
 		font-size: 10px
-// @media only screen and (max-width: 380px)
+
+@media only screen and (max-width: 370px)
+	.about-author
+		&__img
+			max-width: 288px
